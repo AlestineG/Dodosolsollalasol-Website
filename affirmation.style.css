@@ -1,0 +1,51 @@
+body {
+  background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+h1, h3, p {
+  color: floralwhite;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh; 
+}
+
+h3 {
+  font-weight: 50;
+  font-size: 1em;
+  font-style: italic;
+  text-transform: lowercase;
+  letter-spacing: 0.5em;
+  line-height: 5em;
+  text-align: center;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);
+  color: lightcoral;
+
+}
+
+.text span {
+  animation: animate 5s;
+  animation-delay: calc(0.2s * var(--delay)) ;
+}
+
+@keyframes animate {
+  0%, 50% {
+    transform: rotateY(360deg);
+  }
+}
